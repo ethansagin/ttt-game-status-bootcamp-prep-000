@@ -16,6 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+<<<<<<< HEAD
    win_status = false
    WIN_COMBINATIONS.each do |array|
      if array.all?{|x| board[x] == "X"} || array.all?{|x| board[x] == "O"}
@@ -23,6 +24,13 @@ def won?(board)
      end
   end
   return win_status
+=======
+   WIN_COMBINATIONS.each do |array|
+     if array.all?{|x| board[x] == "X"} || array.all?{|x| board[x] == "O"}
+       return array
+    end
+  end
+>>>>>>> 4446dae5ac76ff7d6210262ba82084552571e029
 end
    
    
